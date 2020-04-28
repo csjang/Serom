@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/arrowleft"
+            android:padding="16dp"
+            android:text="돌아가기"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/custnoText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:text="123"
+        android:textSize="2dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/custdetailText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:enabled="false"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:text=""
+        android:textColor="@android:color/background_dark"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/custnameText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:drawableStart="@drawable/people"
+        android:drawableLeft="@drawable/people"
+        android:enabled="false"
+        android:hint="고객상호명"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/repayamtText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:drawableStart="@drawable/dollar"
+        android:drawableLeft="@drawable/dollar"
+        android:enabled="false"
+        android:hint="60,000원"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/resultText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:hint="입금액합계"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/depsitText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/holo_orange_light"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@color/colorWarning"
+            android:padding="10dp"
+            android:text="입금\n취소"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:text="입금\n전송"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
